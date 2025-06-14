@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="MainPageHandler.js"></script>
+     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM Implementation</title>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <h1>Welcome to My GTM Demo Page</h1>
+            <p class="subtitle">An interactive demonstration of GTM with query string parameters</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <section class="intro">
+            </section>
+
+            <section class="form-section">
+                <h2>Enter Key and Value</h2>
+                <form id="apiForm">
+                    <div class="input-group">
+                        <label for="keyInput">Key:</label>
+                        <input type="text" id="keyInput" placeholder="Enter key" />
+                    </div>
+                    <div class="input-group">
+                        <label for="valueInput">Value:</label>
+                        <input type="text" id="valueInput" placeholder="Enter value" />
+                    </div>
+                    <button type="button" id="sendApiRequest">Send API Request</button>
+                </form>
+            </section>
+
+            <section class="documentation">
+                <h2>Quick Documentation</h2>
+                <p>This page demonstrates how query string parameters can be captured and used with Google Tag Manager, and how to make a dynamic API request based on those parameters.</p>
+                <h3>Functionality Walkthrough</h3>
+                <ol>
+                    <li>Enter a key-value pair in the input fields.</li>
+                    <li>Click the <strong>"Send API Request"</strong> button to trigger the API call.</li>
+                    <li>The API response is logged to the browser console, showing the query parameters sent.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Thato Monkhe | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="MainPageHandler.js"></script>
+</body>
+</html>
