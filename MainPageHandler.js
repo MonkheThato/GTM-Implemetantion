@@ -12,6 +12,15 @@ function updateQueryString(key, value) {
     window.history.replaceState({}, '', url);
 }
 
+function pushToDataLayer(key, value) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'keyValueSet',
+        key: key,
+        value: value
+    });
+    console.log('GTM dataLayer pushed:', { key, value });
+}
 // Event listener for key input field
 document.getElementById('keyInput').addEventListener('input', function () {
     const key = this.value;
